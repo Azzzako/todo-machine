@@ -1,0 +1,160 @@
+div{
+--main-size-icon: 50px;
+--main-padding-icon: 0 60px
+}
+
+
+nav{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+
+
+
+a{
+    text-decoration: none;
+    cursor: default;
+}
+
+
+.Navbar-menu{
+    font-size: var(--main-size-icon);
+    padding: var(--main-padding-icon);
+    cursor: pointer;
+    transition: .4s all ease;
+}
+
+
+.Navbar-menu:hover{
+    color: gray;
+}
+
+.Navbar-home{
+    font-size: var(--main-size-icon);
+    padding: var(--main-padding-icon);
+    cursor: pointer;
+    position: relative;
+    transition: .2s all ease-in-out;
+    color: black;
+    text-decoration: none;
+    top: -200px;
+}
+
+@media (max-width:640px) {
+    .Navbar-home{
+        
+        font-size: 30px;
+        padding: 10px;
+    }
+}
+
+@media (max-width:640px) {
+    .Navbar-menu{
+        font-size: 30px;
+        padding: 5px;
+    }
+}
+
+.Navbar-home:hover{
+    color:  darkgoldenrod;
+    transition: .3s all ease;
+}
+
+.Navbar-about{
+    padding: var(--main-padding-icon);
+    cursor: pointer;
+    position: relative;
+    transition: 1s all ease-in-out;
+    color: black;
+    text-decoration: none;
+    top: -200px;
+}
+
+@media (max-width:640px) {
+    .Navbar-about{
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+.Navbar-about:hover{
+    color:  pink;
+    transition: .3s all ease;
+}
+
+
+.Navbar-twitter{
+    font-size: var(--main-size-icon);
+    padding: var(--main-padding-icon);
+    cursor: pointer;
+    position: relative;
+    top: -200px;
+    transition: .8s all ease-in-out;
+    color: black;
+}
+
+@media (max-width:640px) {
+    .Navbar-twitter{
+        font-size: 30px;
+        padding: 10px;
+    }
+}
+
+.Navbar-twitter:hover{
+    color: #00acee;
+    transition: .3s all ease;
+}
+
+.Navbar-linkedin{
+    font-size: var(--main-size-icon);
+    padding: var(--main-padding-icon);
+    cursor: pointer;
+    position: relative;
+    top: -200px;
+    transition: .6s all ease-in-out;
+    color: black;
+}
+
+@media (max-width:640px) {
+    .Navbar-linkedin{
+        font-size: 30px;
+        padding: 10px;
+    }
+}
+
+.Navbar-linkedin:hover{
+    color:  #0A66C2;
+    transition: .3s all ease;
+}
+
+.Navbar-git{
+    font-size: var(--main-size-icon);
+    padding: var(--main-padding-icon);
+    cursor: pointer;
+    position: relative;
+    top: -200px;
+    transition: .4s all ease-in-out;
+    color: black;
+    
+}
+
+@media (max-width:640px) {
+    .Navbar-git{
+        font-size: 30px;
+        padding: 10px;
+    }
+}
+
+.Navbar-git:hover{
+    color:  white;
+    transition: .3s all ease;
+}
+
+.Navbar-menu--active{
+    opacity: 100% ;
+    top: 0;
+    cursor: pointer;
+}

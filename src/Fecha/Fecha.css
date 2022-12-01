@@ -1,0 +1,16 @@
+.fecha{
+    display: flex;
+    position: relative;
+    top: 40px;
+    font-size: 19px;
+    padding: 7px;
+    border-radius: 18px;
+    width: 4.3%;
+    left: 4%;
+}
+
+@media(max-width:640px) {
+    .fecha{
+       display: none;
+    }
+}

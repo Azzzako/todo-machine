@@ -1,0 +1,65 @@
+form {
+    width: 90%;
+    max-width: 300px;
+    background-color: #e3b1c8;
+    padding: 33px 40px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 40px;
+    transition: .5s all ease;
+  }
+  
+  label {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 26px;
+    font-size: 30px;
+  }
+
+  textarea{
+  border: 2px, solid #202329;
+  border-radius: 20px;
+  box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
+  color: #1E1E1F;
+  font-size: 20px;
+  padding: 12px;
+  height: 70px;
+  width: calc(100%-25px);
+  }
+  
+  textarea::placeholder {
+    color: #a5a5a5;
+    font-size: 25px;
+    text-align: center;
+    }
+
+    .button-container{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+
+    .button-add{
+        padding: 10px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: .5s all ease;
+        font-size: 25px;
+    }
+
+    .button-cancel{
+        padding: 10px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: .5s all ease;
+        font-size: 25px;
+    }
+
+
+    button:hover{
+        background-color: #BADAE3;
+    }

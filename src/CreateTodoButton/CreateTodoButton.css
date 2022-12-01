@@ -1,0 +1,25 @@
+.TodoButton{
+    display: flex;
+    position: sticky;
+    left: 85%;
+    bottom:10px;
+    border-radius: 50%;
+    border: none;
+    font-size: 70px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffe5f0;
+    height: 64px;
+    width: 64px;
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: 10px;
+    transform: rotate(0);
+    transition: .5s ;
+}
+
+.TodoButton:hover{
+    background-color: #fdcae1;
+    transform: rotate(224deg);
+    transition: .5s all ease-in-out;
+}

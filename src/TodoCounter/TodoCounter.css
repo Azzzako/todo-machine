@@ -1,0 +1,35 @@
+.cont-counter{
+    display: flex;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+@media (max-width:640px) {
+    .count-counter{
+        display: flex;
+        position: relative;
+
+    }
+}
+
+.title-counter{
+    position: relative;
+    font-size: 50px;
+}
+
+
+
+@media (max-width:640px) {
+    .title-counter{
+        position: relative;
+        left: 5%;
+
+    }
+}
+
+.TodoCounter{
+    position: relative;
+    bottom: -50px;
+    font-size: 25px;
+
+}

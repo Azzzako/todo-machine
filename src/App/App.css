@@ -1,0 +1,30 @@
+.container-App{
+ margin: 0;
+ padding: 0;
+}
+
+.App {
+    text-align: center;
+    max-width: 80%;
+    position: relative;
+    left: 10%;
+    top: -60px;
+  }
+
+  @media (max-width:740px){
+    .App {
+      top: 0;
+    }
+  }
+
+  
+
+
+  
+
+
+  
+
+
+
+
