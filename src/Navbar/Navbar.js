@@ -34,7 +34,7 @@ export const Navbar = () => {
                 <ImMenu/>
             </div>
 
-            <Link to='/'>
+            <Link to='/todo-machine'>
             <div className={`Navbar-home ${visibleTrue && 'Navbar-menu--active'}`}><ImHome/></div>
             </Link>
 
