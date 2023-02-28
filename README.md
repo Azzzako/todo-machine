@@ -5,4 +5,4 @@ Se pueden agregar tareas nuevas a la lista, marcar las tareas que ya se concluye
 Adicional a eso agregue una navbar con links de interes acerca de mi (su desarrollador)
 
 
-![Demo](https://raw.githubusercontent.com/azzzako/todo-machine/main/assets/todomachine.png)
+![Demo](https://raw.githubusercontent.com/azzzako/todo-machine/main/src/assets/todomachine.png)
