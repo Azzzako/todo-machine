@@ -10,48 +10,48 @@ export const useLocalStorage = (itemName, initialValue) => {
 
     useEffect(() => {
 
-        
+
         setTimeout(() => {
 
-    try{
-    
-    const localStorageItem = localStorage.getItem(itemName)
-    let parsedItem; 
+            try {
 
-    if(!localStorageItem) {
-        localStorage.setItem(itemName, JSON.stringify(initialValue))
-        parsedItem = initialValue;
-    } else {
-        parsedItem = JSON.parse(localStorageItem)
-    }
+                const localStorageItem = localStorage.getItem(itemName)
+                let parsedItem;
 
-    setItem(parsedItem)
-    setLoading(false)
+                if (!localStorageItem) {
+                    localStorage.setItem(itemName, JSON.stringify(initialValue))
+                    parsedItem = initialValue;
+                } else {
+                    parsedItem = JSON.parse(localStorageItem)
+                }
 
-     } catch(error){
+                setItem(parsedItem)
+                setLoading(false)
 
-        setError(error)
+            } catch (error) {
 
-     }
+                setError(error)
 
-        },2000)
+            }
+
+        }, 2000)
 
     }, []);
 
 
     const saveItem = (newItem) => {
-       try{
-        const stringifiedItem = JSON.stringify(newItem)
-        localStorage.setItem('TODOS_V1', stringifiedItem)
-        setItem(newItem)
-       } catch(error){
-        setError(error)
-       }
+        try {
+            const stringifiedItem = JSON.stringify(newItem)
+            localStorage.setItem('TODOS_V1', stringifiedItem)
+            setItem(newItem)
+        } catch (error) {
+            setError(error)
+        }
     }
 
     return {
-        item, 
-        saveItem, 
+        item,
+        saveItem,
         loading,
         error
     }
